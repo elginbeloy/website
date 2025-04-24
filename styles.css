@@ -40,6 +40,7 @@ html, body {
 
   /* This will be dynamically replaced by JS, initial state */
   background-color: #191919;
+  background: radial-gradient(256px at 50% 50px, transparent 0%, rgb(25, 25, 25) 100%);
 
   /* Allows mouse events to pass through the overlay */
   pointer-events: none;
