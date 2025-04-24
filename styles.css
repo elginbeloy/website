@@ -85,7 +85,7 @@ html, body {
 }
 
 #hero-text__links {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #hero-text__links a[href] {
@@ -93,6 +93,7 @@ html, body {
 }
 
 .hero-link {
+  font-size: 16px;
   padding: 8px 12px;
   cursor: pointer;
   border-radius: 8px;
@@ -107,42 +108,42 @@ html, body {
   background-color: #212830;
   border-color: #212830;
   color: white;
-  box-shadow: 0px 4px 4px 1px #152b43;
+  box-shadow: 0px 4px 6px 1px #152b43;
 }
 
 #github-link:hover {
-  box-shadow: 0 1px 4px 1px #152b43;
+  box-shadow: 0 1px 6px 1px #152b43;
 }
 
 #linkedin-link {
   background-color: #007ab5;
   border-color: #007ab5;
   color: white;
-  box-shadow: 0px 4px 4px 1px #0066c8;
+  box-shadow: 0px 4px 6px 1px #0066c8;
 }
 
 #linkedin-link:hover {
-  box-shadow: 0px 1px 4px 1px #0066c8;  
+  box-shadow: 0px 1px 6px 1px #0066c8;  
 }
 
 #email-link {
   background-color: #eb4132;
   border-color: #eb4132;
   color: white;
-  box-shadow: 0px 4px 4px 1px #c6221d;
+  box-shadow: 0px 4px 6px 1px #c6221d;
 }
 
 #email-link:hover {
-  box-shadow: 0px 1px 4px 1px #c6221d;
+  box-shadow: 0px 1px 6px 1px #c6221d;
 }
 
 #resume-link {
   background-color: #00cb44;
   border-color: #00cb44;
   color: white;
-  box-shadow: 0px 4px 4px 1px #009833;
+  box-shadow: 0px 4px 6px 1px #009833;
 }
 
 #resume-link:hover {
-  box-shadow: 0px 1px 4px 1px #009833;
+  box-shadow: 0px 1px 6px 1px #009833;
 }
