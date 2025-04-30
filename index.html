@@ -8,44 +8,170 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hero_styles.css">
+    <link rel="stylesheet" href="history_styles.css">
 </head>
 <body>
-    <div id="hero">
-      <div id="hero-overlay"></div>
-      <div id="hero-text">
-        <div id="hero-title">Hey, I'm Elgin!</div>
-        <div id="hero-subtitle">
-          <p>I'm a self-taught Software Engineer 🧑‍💻</p>
-          <p>
-            I've worked at big ol' <img src="./google_logo.png" alt="Google Logo" height="32" />,
-            and 3-person startups 🚀
-          </p>
-          <p>Currently I do contract work 📝</p>
-          <p>I love Gymnastics, data scraping, and puzzles ❤️</p>
-          <p>Here are my links or scroll for my story 😊</p>
-          <div id="hero-text__links">
-            <a href="https://github.com/elginbeloy" target="_blank">
-              <button class="hero-link" id="github-link">
-                Github
-              </button>
-            </a>
-            <a href="https://www.linkedin.com/in/elgin-beloy/" target="_blank">
-              <button class="hero-link" id="linkedin-link">
-                LinkedIn
-              </button>
-            </a>
-            <a href="mailto:beloy.elgin@gmail.com" target="_blank">
-              <button class="hero-link" id="email-link">Email</button>
-            </a>
-            <a href="resume.pdf" download="new_hire_elgin.pdf">
-              <button class="hero-link" id="resume-link">PDF Resume</button>
-            </a>
+    <div id="animation-background">
+      <div id="animation-background-overlay">
+        <script src="script.js"></script>
+        <div id="hero">
+          <div id="hero-overlay"></div>
+          <div id="hero-text">
+            <div id="hero-text-overlay"></div>
+            <div id="hero-title">Hey, I'm Elgin!</div>
+            <div id="hero-subtitle">
+              <p>I'm a self-taught Software Engineer 🧑‍💻</p>
+              <p>
+                I've worked at big ol' <img src="./google_logo.png" alt="Google Logo" height="32" />,
+                and 3-person startups 🚀
+              </p>
+              <p>Currently I do contract work 📝</p>
+              <p>I love data scraping, gymnastics, and puzzles ❤️</p>
+              <div id="hero-text__links">
+                <a href="https://github.com/elginbeloy" target="_blank">
+                  <button class="hero-link" id="github-link">
+                    Github
+                  </button>
+                </a>
+                <a href="https://www.linkedin.com/in/elgin-beloy/" target="_blank">
+                  <button class="hero-link" id="linkedin-link">
+                    LinkedIn
+                  </button>
+                </a>
+                <a href="mailto:beloy.elgin@gmail.com" target="_blank">
+                  <button class="hero-link" id="email-link">Email</button>
+                </a>
+                <a href="resume.pdf" download="new_hire_elgin.pdf">
+                  <button class="hero-link" id="resume-link">PDF Resume</button>
+                </a>
+                <a href="projects.html">
+                  <button class="hero-link" id="projects-link">Projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="history">
+          <div id="history-title">Experience</div>
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('contracting_thumb.png');">
+              <div class="history-item__title">Software & ML Contracting</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__dates">
+                <a>May 2023 - Present</a>
+              </div>          
+              <div class="history-item__description">
+                I code custom software solutions for various companies. My favorite work
+                involves scraping massive  amounts of potentially pertinent reddit data 
+                (Selenium crawling -> Python requests -> Reddit JSON endpoints)
+                then using batch jobs to get LLMs to filter and categorize the data into 
+                consumer insights for various products and services.
+              </div>
+            </div>
+          </div>
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('google_thumb.jpg');">
+              <div class="history-item__title">Google, Software Engineer</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__dates">
+                <a>Oct 2019 - Dec 2020</a> &
+                <a>Jul 2021 - Feb 2023 </a> (3 years)
+              </div>          
+              <div class="history-item__description">
+                Developed embedded Google Payments software using a proprietary
+                Java SSR framework, integrated into Google Play and YouTube
+                platforms (Jul 2021 - Feb 2023).<br>
+                <br>
+                Engineered features for next-generation Google Smart
+                Displays (Dart/Flutter) and Home Automation Routines in the
+                Google Home App (JavaScript/TypeScript) (Oct 2019 - Dec 2020).
+              </div>
+            </div>
+          </div>
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('storr_thumb.png');">
+              <div class="history-item__title">Storr, Software Engineer</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__dates">
+                <a>Jul 2019 - Oct 2019</a>
+              </div>
+              <div class="history-item__description">
+                As one of the early engineers in this SF-born startup, I focused on developing new features such as a cart, new UI, and updating the buying experience for a React Native app focused on social buying and selling of recommended products.
+              </div>
+            </div>
+          </div>
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('startup_thumb.png');">
+              <div class="history-item__title">Defunct AI Startup, Co-Founder</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__dates">
+                <a>Apr 2018 - Jul 2019</a>
+              </div>
+              <div class="history-item__description">
+                At 16 I dropped out of high-school and moved to CA to start my own company. Both attempts (Cohereum & Levana) were focused on coding an Auto-ML platform to make building custom machine learning solutions easier for non-tech businesses. We raised a few million USD and developed an end-to-end platform for building neural nets, but ultimately failed. Nonetheless, the experience taught me a great deal about perseverance, company structure, law, technology, and machine learning.
+              </div>
+            </div>
+          </div>
+          <div id="history-title">Projects</div>
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('theia_thumb.png');">
+              <div class="history-item__title">Theia</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__tools">
+                Python, Selenium, Keras
+              </div>
+              <div class="history-item__description">
+                A ML approach to measuring music similarity I built for a friend to increase click-through rates and decrease advertising cost for their music. Theia crawls YouTube Music downloading songs to compare to a baseline spitting out the top-N closest songs. Theia decides "similarity" by using the cosine distance between the second-to-last layer of a genre classification Convolutional Neural Net that takes in the music spectrograms as visual input data.
+              </div>
+            </div>
+          </div>
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('personal_website_thumb.png');">
+              <div class="history-item__title">elginbeloy.com</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__tools">
+                JavaScript, Vue
+              </div>
+              <div class="history-item__description">
+                My personal website - the one you're currently viewing. The thumbnail is the last version. I host it on Netlify, and have it open-source on Github. I have had versions built using all sorts of JS frameworks and libs (Vue, React, JQuery), but ultimately I think plain HTML/CSS/JS is just fine given the requirements.
+              </div>
+            </div>
+          </div>
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('magictask_thumb.png');">
+              <div class="history-item__title">MagicRPG</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__tools">
+                JavaScript, Vue
+              </div>
+              <div class="history-item__description">
+                A little - but fun - game I made entirely in VueJS. Fight monsters, buy new spells, find items, travel, build, a whole lot more in this little SPA game! I originally made it for task management but it became a game.
+              </div>
+            </div>
+          </div>
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('pytinder_thumb.png');">
+              <div class="history-item__title">PyTinder</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__tools">
+                Python, Selenium
+              </div>
+              <div class="history-item__description">
+                BEFORE GPTs EXISTED: PyTinder was a fun side-project that aimed to automate the entire Tinder lifecycle: login, swiping right, initiating and responding to chats, and getting the date being setup. PyTinder uses Selenium to automate interactions with the Tinder web interface and my own trained Seq2Seq LSTM (Before GPTs existed!) to chat with matched users.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <script src="script.js"></script>
     </div>
 </body>
 </html>
