@@ -48,7 +48,7 @@ html, body {
 #hero {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   color: #D9DACC;
 
   display: flex;
@@ -58,6 +58,8 @@ html, body {
 
 #hero-text {
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 40px;
   max-width: 90%;
   background-color: #111111;
