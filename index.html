@@ -14,7 +14,6 @@
 <body>
     <div id="animation-background">
       <div id="animation-background-overlay">
-        <script src="script.js"></script>
         <div id="hero">
           <div id="hero-overlay"></div>
           <div id="hero-text">
@@ -49,6 +48,9 @@
             </div>
           </div>
         </div>
+        <!-- For hero background mouse follow animation -->
+        <script src="script.js"></script>
+
         <div id="history">
           <div id="history-title">Experience</div>
           <div class="history-item">
@@ -68,6 +70,7 @@
               </div>
             </div>
           </div>
+
           <div class="history-item">
             <div class="history-item__hero-container" style="background-image: url('google_thumb.jpg');">
               <div class="history-item__title">Google, Software Engineer</div>
@@ -88,6 +91,7 @@
               </div>
             </div>
           </div>
+
           <div class="history-item">
             <div class="history-item__hero-container" style="background-image: url('storr_thumb.png');">
               <div class="history-item__title">Storr, Software Engineer</div>
@@ -101,6 +105,7 @@
               </div>
             </div>
           </div>
+
           <div class="history-item">
             <div class="history-item__hero-container" style="background-image: url('startup_thumb.png');">
               <div class="history-item__title">Defunct AI Startup, Co-Founder</div>
@@ -114,53 +119,88 @@
               </div>
             </div>
           </div>
+
           <div id="history-title">Projects</div>
+
           <div class="history-item">
             <div class="history-item__hero-container" style="background-image: url('theia_thumb.png');">
               <div class="history-item__title">Theia</div>
             </div>
             <div class="history-item__content">
               <div class="history-item__tools">
-                Python, Selenium, Keras
+                <span>Python</span><span>Selenium</span><span>Keras</span>
+                <a class="history-item__link" href="https://github.com/elginbeloy/theia" target="_blank">
+                  🔗 github
+                </a>
               </div>
               <div class="history-item__description">
                 A ML approach to measuring music similarity I built for a friend to increase click-through rates and decrease advertising cost for their music. Theia crawls YouTube Music downloading songs to compare to a baseline spitting out the top-N closest songs. Theia decides "similarity" by using the cosine distance between the second-to-last layer of a genre classification Convolutional Neural Net that takes in the music spectrograms as visual input data.
               </div>
             </div>
           </div>
+
+          <div class="history-item">
+            <div class="history-item__hero-container" style="background-image: url('memorybook_thumb.png');">
+              <div class="history-item__title">Memory Book</div>
+            </div>
+            <div class="history-item__content">
+              <div class="history-item__tools">
+                <span>HTML/CSS</span><span>JavaScript</span>
+                <a class="history-item__link" href="https://github.com/elginbeloy/magictask" target="_blank">
+                  🔗 github
+                </a>
+              </div>
+              <div class="history-item__description">
+                My longest running and favorite project is my marriage to my wife, Xinyu, who've I've been with for over 5 years at the time of writing this. Our love is memorialized in a memory book website I coded: xinyuandelgintogetherforever.com check it out to see our cute memories!:)
+              </div>
+            </div>
+          </div>
+
+          
           <div class="history-item">
             <div class="history-item__hero-container" style="background-image: url('personal_website_thumb.png');">
               <div class="history-item__title">elginbeloy.com</div>
             </div>
             <div class="history-item__content">
               <div class="history-item__tools">
-                JavaScript, Vue
+                <span>JavaScript</span><span>Vue</span>
+                <a class="history-item__link" href="https://github.com/elginbeloy/magictask" target="_blank">
+                  🔗 github
+                </a>
               </div>
               <div class="history-item__description">
                 My personal website - the one you're currently viewing. The thumbnail is the last version. I host it on Netlify, and have it open-source on Github. I have had versions built using all sorts of JS frameworks and libs (Vue, React, JQuery), but ultimately I think plain HTML/CSS/JS is just fine given the requirements.
               </div>
             </div>
           </div>
+
           <div class="history-item">
             <div class="history-item__hero-container" style="background-image: url('magictask_thumb.png');">
               <div class="history-item__title">MagicRPG</div>
             </div>
             <div class="history-item__content">
               <div class="history-item__tools">
-                JavaScript, Vue
+                <span>JavaScript</span><span>Vue</span>
+                <a class="history-item__link" href="https://github.com/elginbeloy/magictask" target="_blank">
+                  🔗 github
+                </a>
               </div>
               <div class="history-item__description">
                 A little - but fun - game I made entirely in VueJS. Fight monsters, buy new spells, find items, travel, build, a whole lot more in this little SPA game! I originally made it for task management but it became a game.
               </div>
             </div>
           </div>
+
           <div class="history-item">
             <div class="history-item__hero-container" style="background-image: url('pytinder_thumb.png');">
               <div class="history-item__title">PyTinder</div>
             </div>
             <div class="history-item__content">
               <div class="history-item__tools">
-                Python, Selenium
+                <span>Python</span><span>Selenium</span>
+                <a class="history-item__link" href="https://github.com/elginbeloy/pytinder" target="_blank">
+                  🔗 github
+                </a>
               </div>
               <div class="history-item__description">
                 BEFORE GPTs EXISTED: PyTinder was a fun side-project that aimed to automate the entire Tinder lifecycle: login, swiping right, initiating and responding to chats, and getting the date being setup. PyTinder uses Selenium to automate interactions with the Tinder web interface and my own trained Seq2Seq LSTM (Before GPTs existed!) to chat with matched users.
