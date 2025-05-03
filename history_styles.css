@@ -47,7 +47,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #fff;
   padding: 10px 15px;
   background: linear-gradient(to top, rgba(0,0,0, 0.8) 0%, rgba(0,0,0,0) 100%);
@@ -77,6 +77,7 @@
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  overflow-x: auto;
 }
 
 .history-item__link {
@@ -86,7 +87,7 @@
   background-color: #305CFE20;
   border-radius: 6px;
   border: 1px solid #305CFE80;
-
+  text-wrap: nowrap;
   text-decoration: none;
   color: #305CDE;
   cursor: pointer;
